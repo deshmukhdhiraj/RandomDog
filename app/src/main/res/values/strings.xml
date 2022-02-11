@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RandomDog</string>
+    <string name="random_dog_generator">Random Dog Generator!</string>
+</resources>

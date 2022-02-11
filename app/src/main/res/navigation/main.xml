@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main.xml"
+    app:startDestination="@id/homeFrag">
+
+    <fragment
+        android:id="@+id/homeFrag"
+        android:name="com.randomdog.gui.fragment.HomeFragment"
+        android:label="HomeFragment"
+
+        tools:layout="@layout/home_frag">
+
+
+        <action
+            android:id="@+id/action_homeFrag_to_generatedogsFragment"
+            app:destination="@id/generatedogsFragment" />
+        <action
+            android:id="@+id/action_homeFrag_to_allDogsFragment"
+            app:destination="@id/allDogsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/generatedogsFragment"
+        android:name="com.randomdog.gui.fragment.GenerateDogsFragment"
+        android:label="GenerateDog"
+        tools:layout="@layout/generate_dogs_fragment" />
+
+    <fragment
+        android:id="@+id/allDogsFragment"
+        android:name="com.android.base.com.gui.fragment.ShowDogImagesFragment"
+        android:label="GenerateDog"
+        tools:layout="@layout/image_detail" />
+
+</navigation>
