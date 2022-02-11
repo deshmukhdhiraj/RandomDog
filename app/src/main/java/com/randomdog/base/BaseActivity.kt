@@ -25,8 +25,6 @@ abstract class BaseActivity : FragmentActivity() {
         super.onCreate(savedInstanceState)
         _binding = bindingInflater(layoutInflater)
         setContentView(binding.root)
-
-        actionBar!!.hide()
     }
 
     override fun onDestroy() {
